@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="345dp"
+        android:text="Confirmación"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace" />
+
+    <EditText
+        android:id="@+id/etConfirmacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView" />
+
+
+    <TextView
+        android:text="@string/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtTel"
+        android:layout_below="@+id/idtxtDirec"
+        android:layout_alignStart="@+id/txtDirec"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtDirec"
+        android:hint="@string/txtDireccion"
+        android:textSize="24sp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/txtNom"
+        android:layout_alignStart="@+id/idtxtNom" />
+
+    <TextView
+        android:text="@string/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtDirec"
+        android:layout_alignBaseline="@+id/idtxtDirec"
+        android:layout_alignBottom="@+id/idtxtDirec"
+        android:layout_alignStart="@+id/txtNom" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtTel"
+        android:hint="@string/txtTelefono"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtTel"
+        android:layout_alignBottom="@+id/txtTel"
+        android:layout_alignStart="@+id/idtxtDirec" />
+
+    <TextView
+        android:text="@string/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtFecha"
+        android:layout_below="@+id/txtTel"
+        android:layout_alignStart="@+id/txtTel"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="@string/btnEnvio"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEnvio2"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:text="@string/btnEditar"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEditar"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/btnEnvio2"
+        android:layout_alignStart="@+id/btnEnvio2"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/holo_purple" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtNom"
+        android:hint="@string/txtNombre"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtNom"
+        android:layout_alignBottom="@+id/txtNom"
+        android:layout_toEndOf="@+id/txtDirec"
+        android:layout_marginStart="54dp" />
+
+    <TextView
+        android:text="@string/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtFech"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/txtFecha"
+        android:layout_alignStart="@+id/idtxtTel"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNom"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/etConfirmacion"
+        android:layout_alignStart="@+id/btnEditar" />
+</RelativeLayout>

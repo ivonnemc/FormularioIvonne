@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtTel"
+        android:hint="@string/txtTelefono"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtTel"
+        android:layout_alignBottom="@+id/txtTel"
+        android:layout_alignStart="@+id/idtxtDirec" />
+
+
+    <TextView
+        android:text="@string/txtTelefono"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTel"
+        android:layout_below="@+id/txtDirec"
+        android:layout_alignStart="@+id/txtDirec"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtNom"
+        android:hint="@string/txtNombre"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtNom"
+        android:layout_alignBottom="@+id/txtNom"
+        android:layout_alignStart="@+id/idtxtDirec" />
+
+    <TextView
+        android:text="@string/fecha"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtFech"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/txtTel"
+        android:layout_alignStart="@+id/txtTel" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtxtDirec"
+        android:textSize="24sp"
+        android:hint="@string/txtDireccion"
+        android:layout_alignBaseline="@+id/txtDirec"
+        android:layout_alignBottom="@+id/txtDirec"
+        android:layout_toEndOf="@+id/txtDirec"
+        android:layout_marginStart="44dp" />
+
+    <TextView
+        android:text="@string/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNom"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:layout_below="@+id/etBienvenido"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="@string/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDirec"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/txtNom"
+        android:layout_alignStart="@+id/txtNom" />
+
+    <TextView
+        android:text="@string/fecha"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFecha"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/idtxtFech"
+        android:layout_alignStart="@+id/idtxtFech" />
+
+    <Button
+        android:text="@string/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSalir"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:layout_width="345dp"
+        android:text="¡Bienvenido!"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:fontFamily="monospace"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
